@@ -1,2 +1,2 @@
 ### Hi there 👋
-## nothing to see here now :)
+## nothing to see here :)

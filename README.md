@@ -5,8 +5,8 @@
 <table style="border: none;">
     <tbody>
         <tr>
-            <td style="border: none;"><img style="width: 100%; height: 200px;" src="https://github-readme-stats.vercel.app/api?username=hawkeye359&show_icons=true&theme=transparent"></td>
-            <td><img style="width: 100%; height: 200px;" src="https://github-readme-stats.vercel.app/api/top-langs/?username=hawkeye359&layout=compact"</td>
+            <td style="border: none;"><img style="width: 100%; height: 200px;" src="https://github-readme-stats.vercel.app/api?username=hawkeye359&show_icons=true&bg_color=30,141317,444d7e,5c77c8&title_color=fff&text_color=fff"></td>
+            <td><img style="width: 100%; height: 200px;" src="https://github-readme-stats.vercel.app/api/top-langs/?username=hawkeye359&layout=compact&bg_color=30,0ff1ce,904e95&title_color=fff&text_color=fff"</td>
         </tr>
     </tbody>
 </table>

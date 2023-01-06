@@ -6,7 +6,7 @@
     <tbody>
         <tr>
             <td style="border: none;"><img style="width: 100%; height: 200px;" src="https://github-readme-stats.vercel.app/api?username=hawkeye359&show_icons=true&theme=transparent"></td>
-            <td><img style="width: 100%; height: 200px;" src="https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact"</td>
+            <td><img style="width: 100%; height: 200px;" src="https://github-readme-stats.vercel.app/api/top-langs/?username=hawkeye359&layout=compact"</td>
         </tr>
     </tbody>
 </table>

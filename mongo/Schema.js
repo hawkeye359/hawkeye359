@@ -1,4 +1,4 @@
-const {Schema, model} = require("mongoose");
+import {Schema, model} from "mongoose";
 
 const counter = new Schema({
     name: String,
@@ -7,4 +7,4 @@ const counter = new Schema({
 
 const Counter = model('Counter',counter);
 
-module.exports = Counter;
+export default Counter;

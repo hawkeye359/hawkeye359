@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Universal Defence Academy</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-black">
+    <a
+      id="enquiry"
+      class="
+        fixed
+        origin-bottom-right
+        -rotate-90
+        right-0
+        text-center
+        h-10
+        w-32
+        rounded-tl-xl rounded-tr-xl
+        top-1/2
+        transform
+        bg-white
+        hover:bg-blue-500
+        transition
+        duration-100
+        hover:text-white
+        flex
+        justify-center
+        items-center
+        cursor-pointer
+        text-lg
+        font-semibold
+      "
+      >Enquiry</a
+    >
+    <div
+      id="enquiry"
+      class="
+        fixed
+        origin-bottom-left
+        rotate-90
+        text-center
+        h-12
+        w-40
+        left-0
+        rounded-tl-xl rounded-tr-xl
+        top-1/2
+        transform
+        bg-white
+        flex
+        justify-center
+        items-center
+        cursor-pointer
+        text-lg
+      "
+    >
+      <a
+        class="transform -rotate-90 ml-2"
+        href="https://www.facebook.com/Universal-defence-academy-kakadev-kanpur-107284714042385/"
+        target="blank"
+      >
+        <img class="h-10" src="./images/facebook.png" alt="" />
+      </a>
+      <a
+        href="https://www.instagram.com/universal.defence.academy/"
+        class="transform -rotate-90 ml-2"
+        target="blank"
+      >
+        <img class="h-10" src="./images/instagram.png" alt="" />
+      </a>
+      <a
+        class="transform -rotate-90 ml-2"
+        href="https://t.me/univea"
+        target="blank"
+      >
+        <img class="h-10" src="./images/telegram.png" alt="" />
+      </a>
+    </div>
+    <div
+      id="enquiry-menu"
+      class="
+        w-80
+        rounded-xl
+        fixed
+        bottom-2
+        right-2
+        bg-white
+        flex flex-col
+        p-6
+        hidden
+      "
+    >
+      <a id="close-enquiry" class="self-end cursor-pointer">
+        <div class="w-6 h-1 bg-gray-900 origin-left transform rotate-45"></div>
+        <div
+          class="w-6 h-1 bg-gray-900 origin-left mt-3 transform -rotate-45"
+        ></div>
+      </a>
+      <h2 class="ml-4 font-semibold border-gray-900">Get a call from us</h2>
+      <p id="enquiry-failed" class="text-xs text-red-500 ml-4 hidden">
+        Your enquiry could not be submitted please try again or after some time
+      </p>
+      <p id="enquiry-success" class="text-xs text-green-500 ml-4 hidden">
+        Your enquiry was successfully submitted. You will soon get a call from
+        us.
+      </p>
+      <form action="" class="enquiry-form">
+        <label
+          for="name"
+          class="inline-block text-sm ml-4 relative top-3 bg-white px-1"
+          >Full Name</label
+        >
+        <input
+          id="name"
+          name="name"
+          class="
+            block
+            outline-none
+            w-full
+            border-2 border-indigo-500
+            rounded-xl
+            p-2
+            active:ring-4 active:ring-opacity-20 active:ring-indigo-900
+            focus:ring-4
+            focus:outline-none
+            focus:ring-indigo-900
+            focus:ring-opacity-20
+          "
+          type="text"
+          placeholder="NAME"
+        />
+        <p class="text-xs text-red-500 mt-1 hidden" id="name-warning">
+          Name should be of atleast 4 character
+        </p>
+        <label
+          for="mobile"
+          class="inline-block text-sm ml-4 relative top-3 bg-white px-1"
+          >Mobile No.</label
+        >
+        <input
+          name="mobile"
+          id="mobile"
+          type="text"
+          class="
+            block
+            w-full
+            outline-none
+            border-2 border-indigo-500
+            rounded-xl
+            p-2
+            active:ring-4 active:ring-opacity-20 active:ring-indigo-900
+            focus:ring-4
+            focus:outline-none
+            focus:ring-indigo-900
+            focus:ring-opacity-20
+          "
+          placeholder="MOBILE NO."
+        />
+        <p class="text-xs text-red-500 mt-1 hidden" id="mobile-warning">
+          Mobile Number is invalid
+        </p>
+        <label
+          for="courseselected"
+          class="inline-block text-sm ml-4 relative top-3 bg-white px-1"
+          >Course</label
+        >
+        <select
+          id="courseselected"
+          name="courseselected"
+          class="
+            w-full
+            block
+            outline-none
+            border-2
+            bg-white
+            border-indigo-500
+            rounded-xl
+            p-2
+            active:ring-4 active:ring-opacity-20 active:ring-indigo-900
+            focus:ring-4
+            focus:outline-none
+            focus:ring-indigo-900
+            focus:ring-opacity-20
+          "
+        >
+          <option value="NDA/NA">NDA/NA</option>
+          <option value="NAVY SSR">NAVY/SSR & AA</option>
+          <option value="AIRFORCE">AIRFORCE X&Y</option>
+          <option value="CDS">CDS</option>
+          <option value="AFCAT">AFCAT</option>
+          <option value="SSB">SSB</option>
+          <option value="SSC">SSC</option>
+          <option value="other">Other</option>
+        </select>
+        <label
+          for="message"
+          class="inline-block text-sm ml-4 relative top-3 bg-white px-1"
+          >Message</label
+        >
+        <textarea
+          name="message"
+          id="message"
+          class="
+            w-full
+            block
+            outline-none
+            border-2 border-indigo-500
+            rounded-xl
+            p-2
+            active:ring-4 active:ring-opacity-20 active:ring-indigo-900
+            focus:ring-4
+            focus:outline-none
+            focus:ring-indigo-900
+            focus:ring-opacity-20
+          "
+          placeholder="MESSAGE"
+        ></textarea>
+        <div class="flex">
+          <button
+            id="submit-button"
+            class="
+              rounded-full
+              px-5
+              py-2
+              bg-indigo-500
+              text-white
+              hover:bg-indigo-700
+              tran
+              mt-3
+              active:ring-4 active:ring-opacity-20 active:ring-indigo-900
+              focus:ring-4
+              focus:outline-none
+              focus:ring-indigo-900
+              focus:ring-opacity-20
+            "
+          >
+            Submit
+          </button>
+          <svg
+            id="loading-enquiry"
+            class="mt-4 ml-2 hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            style="background: rgb(255, 255, 255); shape-rendering: auto"
+            width="30px"
+            height="30px"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="xMidYMid"
+          >
+            <circle
+              cx="50"
+              cy="50"
+              fill="none"
+              stroke="#0a0a0a"
+              stroke-width="11"
+              r="35"
+              stroke-dasharray="164.93361431346415 56.97787143782138"
+            >
+              <animateTransform
+                attributeName="transform"
+                type="rotate"
+                repeatCount="indefinite"
+                dur="3.0303030303030303s"
+                values="0 50 50;360 50 50"
+                keyTimes="0;1"
+              ></animateTransform>
+            </circle>
+          </svg>
+        </div>
+      </form>
+    </div>
+    <div id="root" class="relative h-screen overflow-hidden">
+      <div class="perspective_container h-full w-full absolute">
+        <img
+          class="
+            image
+            absolute
+            transition
+            druration-75
+            object-cover
+            h-full
+            w-full
+            object-bottom
+          "
+          id="image1"
+          src="./images/1.png"
+          alt=""
+        />
+        <img
+          class="
+            image
+            absolute
+            bottom-0
+            left-0
+            transition
+            druration-75
+            object-cover
+            h-full
+            w-full
+            object-center
+          "
+          id="image2"
+          src="./images/2.png"
+          alt=""
+        />
+        <img
+          class="
+            image
+            absolute
+            bottom-0
+            left-0
+            transition
+            druration-75
+            object-cover
+            h-full
+            w-full
+            object-center
+          "
+          id="image3"
+          src="./images/3.png"
+          alt=""
+        />
+        <img
+          class="
+            image
+            absolute
+            bottom-0
+            left-0
+            transition
+            druration-75
+            object-cover
+            h-full
+            w-full
+            object-center
+          "
+          id="image4"
+          src="./images/4.png"
+          alt=""
+        />
+      </div>
+
+      <h1
+        id="main-heading"
+        class="
+          text-4xl
+          sm:text-7xl
+          lg:text-6xl
+          xl:text-7xl
+          absolute
+          top-52
+          text-yellow-200
+          font-semibold
+          text-center
+          m-auto
+        "
+      >
+        UNIVERSAL <br class="lg:hidden" />
+        DEFENCE <br class="lg:hidden" />
+        ACADEMY <br />
+        <a
+          id="enroll-link"
+          href="./html/contact.html"
+          class="
+            text-center text-sm
+            py-2
+            px-3
+            inline-block
+            rounded-full
+            bg-blue-500
+            font-semibold
+            text-white
+            origin-center
+            -mt-5
+          "
+          >Enroll Now</a
+        >
+      </h1>
+
+      <header
+        class="
+          p-3
+          md:p-5
+          w-full
+          bg-transparent
+          flex
+          justify-between
+          items-center
+          border-none
+        "
+      >
+        <div class="lg:hidden"></div>
+        <div id="hamburger" class="z-40 origin-center left-3 lg:hidden fixed">
+          <div class="h-1 w-8 rounded-full bg-gray-50 mb-1"></div>
+          <div class="h-1 w-8 rounded-full bg-gray-50 mb-1"></div>
+          <div class="h-1 w-8 rounded-full bg-gray-50 mb-1"></div>
+        </div>
+        <div class="h-28">
+          <img class="m-auto h-28 lg:h-36" src="./images/logo.png" alt="" />
+        </div>
+        <div class="lg:hidden"></div>
+        <div
+          id="menu"
+          class="
+            lg:block
+            fixed
+            lg:static
+            z-30
+            top-0
+            h-screen
+            lg:h-auto
+            w-60
+            lg:w-auto
+            bg-yellow-500
+            lg:bg-transparent
+            menu-close
+            flex
+            lg:justify-center lg:items-center
+          "
+        >
+          <ul
+            class="lg:text-center lg:flex relative lg:static top-20 pl-10 pl-0"
+          >
+            <li class="pr-2 p-4 lg:p-0 lg:px-2">
+              <a class="text-gray-900 bg-white rounded-full px-4 py-3">Home</a>
+            </li>
+            <li class="pr-2 p-4 lg:p-0 lg:px-2">
+              <a
+                href="./html/about.html"
+                class="nav-link text-gray-50 rounded-full px-4 py-3"
+                >About</a
+              >
+            </li>
+            <li id="course" class="relative pr-2 p-4 lg:p-0 lg:px-2">
+              <a
+                href="#courses"
+                class="nav-link text-gray-50 rounded-full px-4 py-3"
+                >Courses</a
+              >
+              <ul
+                id="course-menu"
+                class="
+                  hidden
+                  relative
+                  lg:absolute
+                  right-3
+                  w-44
+                  ml-5
+                  pl-5
+                  lg:pl-0 lg:text-right
+                  p-3
+                  rounded-lg
+                  text-gray-50
+                  mt-2
+                "
+              >
+                <li>
+                  <a
+                    class="course-link w-full inline-block px-1"
+                    href="./courses/nda.html"
+                    >NDA/NA</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="course-link w-full inline-block px-1"
+                    href="./courses/navy.html"
+                    >NAVY SSR / AA</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="course-link w-full inline-block px-1"
+                    href="./courses/airforce.html"
+                    >AIRFORCE X/Y</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="course-link w-full inline-block px-1"
+                    href="./courses/cds.html"
+                    >CDS</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="course-link w-full inline-block px-1"
+                    href="./courses/afcat.html"
+                    >AFCAT</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="course-link w-full inline-block px-1"
+                    href="./courses/ssb.html"
+                    >SSB</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="course-link w-full inline-block px-1"
+                    href="./courses/ssc.html"
+                    >SSC</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="pr-2 p-4 lg:p-0 lg:px-2">
+              <a
+                href="./html/testimonials.html"
+                class="nav-link text-gray-50 rounded-full px-4 py-3"
+                >Testimonials</a
+              >
+            </li>
+            <li class="pr-2 p-4 lg:p-0 lg:px-2">
+              <a
+                href="./html/blog.html"
+                class="nav-link text-gray-50 rounded-full px-4 py-3"
+                >Blog</a
+              >
+            </li>
+            <li class="pr-2 p-4 lg:p-0 lg:px-2">
+              <a
+                href="./html/gallery.html"
+                class="nav-link text-gray-50 rounded-full px-4 py-3"
+                >Gallery</a
+              >
+            </li>
+            <li class="pr-2 p-4 lg:p-0 lg:px-2">
+              <a
+                href="./html/career.html"
+                class="nav-link text-gray-50 rounded-full px-4 py-3"
+                >Career</a
+              >
+            </li>
+            <li class="pr-2 p-4 lg:p-0 lg:px-2">
+              <a
+                href="./html/contact.html"
+                class="nav-link text-gray-50 rounded-full px-4 py-3"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </header>
+    </div>
+
+    <div id="root2" class="">
+      <div class="grid grid-cols-1 lg:grid-cols-2 p-10">
+        <div class="col-span-1 flex justify-center flex-col">
+          <div class="lg:hidden col-span-1">
+            <img class="" src="./images/aircraft.png" alt="" />
+          </div>
+          <h2 class="text-5xl lg:text-6xl text-white font-semibold">
+            Fueled by the dream to serve in the
+            <span class="text-blue-300">Indian Army</span> ?
+          </h2>
+          <h2 class="text-3xl lg:text-4xl text-gray-300 pt-2">
+            We will help you get through it.
+          </h2>
+          <p class="text-white text-xl lg:text-2xl text-gray-100 pt-5">
+            With our well-designed courses, proper guidance, and best faculties
+            you will be able to achieve your dream to serve in Indian Army in
+            minimum time.
+          </p>
+          <a
+            class="
+              bg-white
+              rounded-full
+              px-5
+              w-52
+              font-semibold
+              text-center
+              py-2
+              mt-5
+              hover:bg-gray-300
+              active:ring-4
+              active:ring-opacity-20
+              active:ring-white
+              active:outline-none
+              focus:ring-4
+              focus:ring-opacity-20
+              focus:ring-white
+              focus:outline-none
+            "
+            href="#courses"
+            >Explore Our Courses</a
+          >
+        </div>
+        <div class="hidden lg:block col-span-1">
+          <img class="" src="./images/aircraft.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="mt-20">
+      <h2 class="text-4xl lg:text-5xl text-white text-center px-4">
+        Our students are serving in
+      </h2>
+      <div
+        class="
+          grid grid-cols-1
+          sm:grid-cols-2
+          md:grid-cols-4
+          max-w-xl
+          md:max-w-4xl
+          lg:max-w-5xl
+          m-auto
+          mt-10
+        "
+      >
+        <div class="col-span-1 mb-4">
+          <img class="h-60 m-auto" src="./images/navy.png" alt="" />
+          <h3 class="text-center font-semibold text-white mt-5 text-xl">
+            INDIAN NAVY
+          </h3>
+        </div>
+        <div class="col-span-1 mb-4">
+          <img class="h-60 m-auto" src="./images/merchant.png" alt="" />
+          <h3 class="text-center font-semibold text-white mt-5 text-xl">
+            MERCHANT NAVY
+          </h3>
+        </div>
+        <div class="col-span-1 mb-4">
+          <img
+            class="h-60 m-auto"
+            src="./images/airforce-removebg.png"
+            alt=""
+          />
+          <h3 class="text-center font-semibold text-white mt-5 text-xl">
+            INDIAN AIRFORCE
+          </h3>
+        </div>
+        <div class="col-span-1 relative mb-4 top-2">
+          <img class="h-56 m-auto" src="./ssb.png" alt="" />
+          <h3 class="text-center font-semibold text-white mt-5 text-xl">SSB</h3>
+        </div>
+      </div>
+    </div>
+    <div id="courses" class="mb-20 mt-20">
+      <h2 class="text-4xl lg:text-5xl text-white text-center px-4">
+        Our Courses
+      </h2>
+      <div
+        class="
+          grid
+          gap-10
+          grid-cols-1
+          sm:grid-cols-2
+          lg:grid-cols-3
+          px-6
+          m-auto
+          mt-10
+          max-w-md
+          sm:max-w-2xl
+          lg:max-w-5xl
+        "
+      >
+        <div class="col-span-1 rounded-2xl m-auto relative pb-2 course-card">
+          <img
+            class="w-full h-48 rounded-tl-xl rounded-tr-xl object-cover"
+            src="./images/nda.jpeg"
+            alt=""
+          />
+          <div class="p-3">
+            <h2 class="text-gray-900 text-xl font-semibold mt-2">NDA/NA</h2>
+            <p class="text-gray-300 mb-4 text-sm">
+              The NDA exam is conducted by UPSC for admission to the Army, Navy
+              and Air Force wings of the NDA. This exam is a gateway for
+              candidates looking forward to joining Defence Forces including
+              Army, Navy and Air Force. This is a national level exam conducted
+              twice...
+            </p>
+            <a
+              class="
+                px-4
+                py-2
+                text-white
+                bg-gray-900
+                rounded-md
+                hover:bg-gray-600
+              "
+              href="./courses/nda.html"
+              >Read More</a
+            >
+          </div>
+        </div>
+        <div class="col-span-1 rounded-2xl m-auto relative pb-2 course-card">
+          <img
+            class="w-full h-48 rounded-tl-xl rounded-tr-xl object-cover"
+            src="./images/navy.jpg"
+            alt=""
+          />
+          <div class="p-3">
+            <h2 class="text-gray-900 text-xl font-semibold mt-2">
+              NAVY SSR AND AA
+            </h2>
+            <p class="text-gray-300 mb-4 text-sm">
+              The Chief of the Naval Staff (CNS) exercises operational and
+              administrative control of the Indian Navy from the Integrated
+              Headquarters of Ministry of Defence (Navy). He is assisted by the
+              Vice Chief of the Naval Staff (VCNS) and three other Principal
+              Staf...
+            </p>
+            <a
+              class="
+                px-4
+                py-2
+                text-white
+                bg-gray-900
+                rounded-md
+                hover:bg-gray-600
+              "
+              href="./courses/navy.html"
+              >Read More</a
+            >
+          </div>
+        </div>
+        <div class="col-span-1 rounded-2xl m-auto relative pb-2 course-card">
+          <img
+            class="w-full h-48 rounded-tl-xl rounded-tr-xl object-cover"
+            src="./images/airforce.png"
+            alt=""
+          />
+          <div class="p-3">
+            <h2 class="text-gray-900 text-xl font-semibold mt-2">
+              AIRFORCE X&Y
+            </h2>
+            <p class="text-gray-300 mb-4 text-sm">
+              Central Airmen Selection Board was formed at Air Force Station New
+              Delhi (AFND) in May 1980 under the direct control of Air HQs. In
+              1996, it moved from AFND to Brar Square, Naraina. Central Airmen
+              Selection Board is commanded by an Air Commodore who...
+            </p>
+            <a
+              class="
+                px-4
+                py-2
+                text-white
+                bg-gray-900
+                rounded-md
+                hover:bg-gray-600
+              "
+              href="./courses/airforce.html"
+              >Read More</a
+            >
+          </div>
+        </div>
+        <div class="col-span-1 rounded-2xl m-auto relative pb-2 course-card">
+          <img
+            class="w-full h-48 rounded-tl-xl rounded-tr-xl object-cover"
+            src="./images/cds.jpg"
+            alt=""
+          />
+          <div class="p-3">
+            <h2 class="text-gray-900 text-xl font-semibold mt-2">CDS</h2>
+            <p class="text-gray-300 mb-4 text-sm">
+              The CDS Written Examination is conducted by UPSC twice every year
+              for graduates to fill the vacancies of the following institutions
+              of the Indian Armed Forces. Indian Military Academy (IMA) ;
+              Dehradun Indian Naval Academy Air Force Academy; Hyderabad
+            </p>
+            <a
+              class="
+                px-4
+                py-2
+                text-white
+                bg-gray-900
+                rounded-md
+                hover:bg-gray-600
+              "
+              href="./courses/cds.html"
+              >Read More</a
+            >
+          </div>
+        </div>
+
+        <div class="col-span-1 rounded-2xl m-auto relative pb-2 course-card">
+          <img
+            class="w-full h-48 rounded-tl-xl rounded-tr-xl object-cover"
+            src="./images/ssb.jpg"
+            alt=""
+          />
+          <div class="p-3">
+            <h2 class="text-gray-900 text-xl font-semibold mt-2">SSB</h2>
+            <p class="text-gray-300 mb-4 text-sm">
+              Services Selection Board (SSB) is an organization that assesses
+              the candidates for becoming officers into the Indian Armed Forces.
+              The board evaluates the suitability of the candidate for becoming
+              an officer using a standardized protocol of evaluation system
+              whi...
+            </p>
+            <a
+              class="
+                px-4
+                py-2
+                text-white
+                bg-gray-900
+                rounded-md
+                hover:bg-gray-600
+              "
+              href="./courses/ssb.html"
+              >Read More</a
+            >
+          </div>
+        </div>
+        <div class="col-span-1 rounded-2xl m-auto relative pb-2 course-card">
+          <img
+            class="w-full h-48 rounded-tl-xl rounded-tr-xl object-cover"
+            src="./images/ssc.webp"
+            alt=""
+          />
+          <div class="p-3">
+            <h2 class="text-gray-900 text-xl font-semibold mt-2">SSC</h2>
+            <p class="text-gray-300 mb-4 text-sm">
+              Services Selection Board (SSB) is an organization that assesses
+              the candidates for becoming officers into the Indian Armed Forces.
+              The board evaluates the suitability of the candidate for becoming
+              an officer using a standardized protocol of evaluation system
+              whi...
+            </p>
+            <a
+              class="
+                px-4
+                py-2
+                text-white
+                bg-gray-900
+                rounded-md
+                hover:bg-gray-600
+              "
+              href="./courses/ssb.html"
+              >Read More</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-20 mb-20">
+      <h2 class="text-4xl lg:text-5xl text-white text-center px-4">
+        What students are saying about us
+      </h2>
+      <div class="grid grid-cols-1 lg:grid-cols-4 mt-20 max-w-3xl m-auto px-6">
+        <div
+          id="testimonials-left"
+          class="h-44 mt-auto ml-auto w-44 col-span-1 hidden lg:block"
+        >
+          <div
+            id="testimonials-shadow-left"
+            class="
+              h-full
+              w-full
+              bg-white
+              origin-top-left
+              transform
+              -translate-x-1 -translate-y-1
+              -rotate-3
+              flex flex-col
+              justify-center
+              items-center
+            "
+          >
+            <div
+              class="
+                transform
+                rotate-3
+                flex flex-col
+                justify-center
+                items-center
+              "
+            >
+              <img
+                id="tetimonials-left-image"
+                src="./student.jpg"
+                class="h-20 rounded-full"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div id="testimonials" class="h-80 w-80 m-auto col-span-2 m-auto">
+          <div
+            id="testimonials-shadow"
+            class="
+              h-full
+              w-full
+              bg-white
+              origin-bottom-left
+              transform
+              -rotate-3
+              flex flex-col
+              justify-center
+              items-center
+            "
+          >
+            <div
+              class="
+                transform
+                rotate-3
+                flex flex-col
+                justify-center
+                items-center
+              "
+            >
+              <img
+                id="testimonials-image"
+                src="./student.jpg"
+                class="h-20 rounded-full"
+                alt=""
+              />
+              <h3 id="testimonials-name" class="font-semibold mt-2">
+                Yogendra Kumar
+              </h3>
+              <p id="testimonials-text" class="text-sm w-52 text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+                enim expedita saepe, recusandae ullam cupiditate! Quos vitae
+                commodi
+              </p>
+              <div class="pagination flex h-5 items-center justify-center mt-4">
+                <a class="cursor-pointer left-click"
+                  ><img src="./images/leftarrow.png" class="h-5" alt=""
+                /></a>
+                &nbsp; &nbsp; &nbsp; &nbsp;
+                <a class="cursor-pointer right-click"
+                  ><img src="./images/rightarrow.png" class="h-5" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          id="testimonials-right"
+          class="h-44 mt-auto mr-auto w-44 col-span-1 hidden lg:block"
+        >
+          <div
+            id="testimonials-shadow-right"
+            class="
+              h-full
+              w-full
+              origin-top-right
+              transform
+              translate-x-1
+              -translate-y-1
+              rotate-3
+              flex flex-col
+              justify-center
+              items-center
+              bg-white
+            "
+          >
+            <div
+              class="
+                transform
+                -rotate-3
+                flex flex-col
+                justify-center
+                items-center
+              "
+            >
+              <img
+                id="tetimonials-right-image"
+                src="./student.jpg"
+                class="h-20 rounded-full"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-20 mb-20">
+      <h2 class="text-5xl text-center text-white">Blog</h2>
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-3 w-5/6 m-auto gap-6">
+        <div
+          id="blog1"
+          class="
+            col-span-1
+            md:col-span-2
+            h-96
+            row-span-1
+            md:row-span-2
+            rounded-2xl
+            relative
+            overflow-hidden
+          "
+        >
+          <h2
+            class="
+              text-4xl
+              leading-tight
+              w-full
+              text-yellow-500
+              font-semibold
+              p-5
+              blog-heading
+            "
+          >
+            <span class="bg-pink-600 text-white">
+              Want to Learn "The BEST Way to prepare for NDA Written Exam"
+            </span>
+          </h2>
+          <img
+            class="absolute w-full top-0 left-0 h-full object-cover blog-image"
+            src="./images/exam.jpg"
+            alt=""
+          />
+          <div
+            class="
+              w-full
+              h-full
+              absolute
+              top-0
+              bg-gradient-to-b
+              from-gray-500
+              to-gray-500
+              mix-blend-color
+              blog-overlay
+            "
+          ></div>
+          <div class="absolute bottom-0 left-0 p-5 blog-description">
+            <a
+              href="./html/blog_template?blog=blog2"
+              class="
+                block
+                bg-gradient-to-r
+                from-yellow-500
+                to-pink-500
+                px-4
+                py-1
+                rounded-full
+                mb-3
+                text-gray-50
+                mt-20
+              "
+              >Read Full Article</a
+            >
+            <div class="flex items-start">
+              <div
+                class="
+                  w-10
+                  h-10
+                  p-px
+                  rounded-full
+                  bg-gradient-to-r
+                  from-yellow-500
+                  to-pink-500
+                "
+              >
+                <img src="./student.jpg" class="w-full rounded-full" alt="" />
+              </div>
+
+              <div class="text-white">
+                <h4 class="px-2">Manoj Kumar</h4>
+                <h4 class="px-2 text-sm">24/08/2021</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="
+            col-span-1
+            row-span-1
+            h-44
+            rounded-2xl
+            relative
+            overflow-hidden
+            flex
+            justify-center
+            items-center
+            blog-link
+          "
+        >
+          <a class="" href="./html/blog_template?blog=blog1">
+            <h2
+              class="
+                text-2xl
+                md:text-base
+                lg:text-2xl
+                w-full
+                text-white
+                p-5
+                blog-heading
+              "
+            >
+              A big step towards gender equality. SC orders centre to allow
+              women in NDA
+            </h2>
+            <div
+              class="
+                blog-overlay
+                bg-overlay
+                absolute
+                w-full
+                h-full
+                bg-gradient-to-l
+                top-0
+                left-0
+              "
+            ></div>
+          </a>
+        </div>
+        <div
+          class="
+            col-span-1
+            row-span-1
+            h-44
+            rounded-2xl
+            relative
+            overflow-hidden
+            flex
+            justify-center
+            items-center
+            blog-link
+          "
+        >
+          <a class="" href="./html/blog_template?blog=blog3">
+            <h2
+              class="
+                text-2xl
+                md:text-base
+                lg:text-2xl
+                w-full
+                text-white
+                p-5
+                blog-heading
+              "
+            >
+              How to prepare for SSB interview?
+            </h2>
+            <div
+              class="
+                bg-overlay
+                absolute
+                w-full
+                h-full
+                bg-gradient-to-l
+                top-0
+                left-0
+                blog-overlay
+              "
+            ></div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <footer
+      class="
+        grid grid-cols-1
+        sm:grid-cols-2
+        lg:grid-cols-4
+        px-10
+        py-5
+        bg-gray-900
+        text-sm
+      "
+    >
+      <div class="cols-span-1">
+        <h2 class="text-white text-xl font-semibold mt-3">
+          Universal Defence Academy
+        </h2>
+        <img class="h-20 mt-2" src="./images/logo.png" alt="" />
+        <p class="text-white mt-2 max-w-md">
+          A career in Defence as an officer has always a place of respect, proud
+          for the Nation, family and among youth. Universal Defence Academy'
+          Team gives his best efforts to fulfull your dream.
+        </p>
+      </div>
+      <div class="col-span-1 mt-6 sm:pl-3 lg:flex lg:justify-center sm:mt-3">
+        <ul id="footer-nav-list" class="text-white">
+          <h2 class="text-lg mb-2 border-b-2 border-white inline-block">
+            Site Navigation
+          </h2>
+          <li><a class="text-gray-500">Home</a></li>
+          <li><a href="./html/about.html">About</a></li>
+          <li><a href="./html/testimonials.html">Testimonials</a></li>
+          <li><a href="./html/blog.html">Blog</a></li>
+          <li><a href="./html/gallery.html">Gallery</a></li>
+          <li><a href="./html/career.html">Career</a></li>
+          <li><a href="./html/contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="col-span-1 mt-6 lg:flex lg:justify-center sm:mt-3">
+        <ul id="footer-course-list" class="text-white">
+          <h2 class="text-lg mb-2 border-b-2 border-white inline-block">
+            Courses
+          </h2>
+          <li><a href="./courses/nda.html">NDA/NA</a></li>
+          <li><a href="./courses/navy.html">NAVY SSR</a></li>
+          <li><a href="./courses/airforce.html">AIRFORCE X&Y</a></li>
+          <li><a href="./courses/ssb.html">SSB</a></li>
+          <li><a href="./courses/afcat.html">AFCAT</a></li>
+          <li><a href="./courses/cds.html">CDS</a></li>
+          <li><a href="./courses/ssc.html">SSC</a></li>
+        </ul>
+      </div>
+      <div class="col-span-1 mt-6 sm:pl-3 sm:mt-3">
+        <h2 class="text-white text-xl border-b-2 inline-block">Contact Us</h2>
+        <div class="flex mt-4 items-center mt-2">
+          <img src="./images/location.png" class="h-8" alt="" />
+          <h3 class="pl-4 text-white">
+            117/N/110 Dr. Jha Lane, Kakadeo, Kanpur, U.P.
+          </h3>
+        </div>
+        <div class="flex mt-3 items-center">
+          <img src="./images/email.png" class="h-8 mt-2" alt="" />
+          <a
+            href="mailto:universaldefenceacademy
+          @gmail.com"
+            class="pl-4 text-white break-all"
+            >universaldefenceacademy @gmail.com</a
+          >
+        </div>
+        <div class="flex mt-5 items-center">
+          <img src="./images/phone-call.png" class="h-8 mt-2" alt="" />
+          <h3 class="pl-4 text-white">
+            <span class="">
+              <a
+                class="
+                  inline-block
+                  bg-black
+                  px-2
+                  hover:text-blue-500
+                  rounded-2xl
+                  w-28
+                  text-center
+                "
+                href="tel:9454040395"
+                >9454040395</a
+              >
+            </span>
+            <span
+              ><a
+                class="
+                  mt-1
+                  inline-block
+                  bg-black
+                  px-2
+                  hover:text-blue-500
+                  rounded-2xl
+                  w-28
+                  text-center
+                "
+                href="tel:7565849561"
+                >7565849561</a
+              ></span
+            >
+          </h3>
+        </div>
+      </div>
+    </footer>
+    <div
+      class="
+        h-20
+        bg-gray-800
+        flex flex-col
+        justify-center
+        items-center
+        text-white
+      "
+    >
+      <div class="text-center">
+        &copy; 2021 Universal Defence Academy, Inc All right reserved
+      </div>
+      <div>Made With ❤ by &nbsp; <a href="">@Angirasoft</a></div>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_MAF97uLs13EW0yOorTHJ5");
+      })();
+    </script>
+    <script type="text/javascript" src="./public/js/enquiry-form.js"></script>
+    <script src="./public/js/app.js"></script>
+  </body>
+</html>

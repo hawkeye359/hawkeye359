@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Blog</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-black">
+    <header
+      class="
+        p-3
+        md:p-5
+        w-full
+        bg-transparent
+        flex
+        justify-between
+        items-center
+        h-20
+        sticky
+        top-0
+        bg-black
+        z-30
+      "
+    >
+      <div class="lg:hidden"></div>
+      <div id="hamburger" class="z-40 absolute origin-center left-3 lg:hidden">
+        <div class="h-1 w-8 rounded-full bg-gray-50 mb-1"></div>
+        <div class="h-1 w-8 rounded-full bg-gray-50 mb-1"></div>
+        <div class="h-1 w-8 rounded-full bg-gray-50 mb-1"></div>
+      </div>
+      <div class="h-28">
+        <img
+          class="m-auto relative top-5 h-28 lg:h-28"
+          src="../images/logo.png"
+          alt=""
+        />
+      </div>
+      <div class="lg:hidden"></div>
+      <div
+        id="menu"
+        class="
+          lg:block
+          absolute
+          lg:static
+          z-30
+          top-0
+          h-screen
+          lg:h-auto
+          w-60
+          lg:w-auto
+          bg-yellow-500
+          lg:bg-transparent
+          menu-close
+          flex
+          lg:justify-center lg:items-center
+        "
+      >
+        <ul class="lg:text-center lg:flex relative lg:static top-20 pl-10 pl-0">
+          <li class="pr-2 p-4 lg:p-0 lg:px-2">
+            <a
+              class="nav-link text-gray-50 rounded-full px-4 py-3"
+              href="../index.html"
+              >Home</a
+            >
+          </li>
+          <li class="pr-2 p-4 lg:p-0 lg:px-2">
+            <a
+              href="./about.html"
+              class="nav-link text-gray-50 rounded-full px-4 py-3"
+              >About</a
+            >
+          </li>
+          <li id="course" class="relative pr-2 p-4 lg:p-0 lg:px-2">
+            <a class="nav-link text-gray-50 rounded-full px-4 py-3">Courses</a>
+            <ul
+              id="course-menu"
+              class="
+                hidden
+                relative
+                lg:absolute
+                right-3
+                w-44
+                ml-5
+                pl-5
+                lg:pl-0 lg:text-right
+                p-3
+                rounded-lg
+                text-gray-50
+                mt-2
+              "
+            >
+              <li>
+                <a
+                  class="course-link w-full inline-block px-1"
+                  href="../courses/nda.html"
+                  >NDA/NA</a
+                >
+              </li>
+              <li>
+                <a
+                  class="course-link w-full inline-block px-1"
+                  href="../courses/navy.html"
+                  >NAVY SSR / AA</a
+                >
+              </li>
+              <li>
+                <a
+                  class="course-link w-full inline-block px-1"
+                  href="../courses/airforce.html"
+                  >AIRFORCE X/Y</a
+                >
+              </li>
+              <li>
+                <a
+                  class="course-link w-full inline-block px-1"
+                  href="../courses/cds.html"
+                  >CDS</a
+                >
+              </li>
+              <li>
+                <a
+                  class="course-link w-full inline-block px-1"
+                  href="../courses/afcat.html"
+                  >AFCAT</a
+                >
+              </li>
+              <li>
+                <a
+                  class="course-link w-full inline-block px-1"
+                  href="../courses/ssb.html"
+                  >SSB</a
+                >
+              </li>
+              <li>
+                <a
+                  class="course-link w-full inline-block px-1"
+                  href="../courses/ssc.html"
+                  >SSC</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="pr-2 p-4 lg:p-0 lg:px-2">
+            <a
+              href="./testimonials.html"
+              class="nav-link text-gray-50 rounded-full px-4 py-3"
+              >Testimonials</a
+            >
+          </li>
+          <li class="pr-2 p-4 lg:p-0 lg:px-2">
+            <a
+              href="./blog.html"
+              class="nav-link text-gray-50 rounded-full px-4 py-3"
+              >Blog</a
+            >
+          </li>
+          <li class="pr-2 p-4 lg:p-0 lg:px-2">
+            <a
+              href="./gallery.html"
+              class="nav-link text-gray-50 rounded-full px-4 py-3"
+              >Gallery</a
+            >
+          </li>
+          <li class="pr-2 p-4 lg:p-0 lg:px-2">
+            <a
+              href="./career.html"
+              class="nav-link text-gray-50 rounded-full px-4 py-3"
+              >Career</a
+            >
+          </li>
+          <li class="pr-2 p-4 lg:p-0 lg:px-2">
+            <a
+              href="./contact.html"
+              class="nav-link text-gray-50 rounded-full px-4 py-3"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="grid grid-cols-6 m-auto mt-20 mb-10">
+      <div id="blog-content" class="col-span-6 lg:col-span-4 pl-10"></div>
+      <div class="col-span-2 hidden lg:block">
+        <div
+          class="
+            sticky
+            top-40
+            rounded-lg
+            bg-gradient-to-br
+            from-yellow-500
+            to-pink-500
+            mx-5
+            p-2
+            flex
+            justify-center
+            items-center
+          "
+        >
+          <div class="h-full w-full bg-white rounded-lg pb-3">
+            <h3 class="font-semibold text-lg text-center mb-4 mt-2">
+              Read More
+            </h3>
+            <a
+              href="./blog_template?blog=blog1"
+              class="
+                h-20
+                bg-gray-200
+                block
+                flex
+                items-center
+                px-4
+                hover:bg-gray-400 hover:text-blue-50
+                text-blue-500
+              "
+            >
+              <p>
+                A big step towards gender equality. SC orders centre to allow
+                women in NDA
+              </p>
+            </a>
+            <a
+              href="./blog_template?blog=blog2"
+              class="
+                h-20
+                bg-gray-200
+                block
+                flex
+                items-center
+                px-4
+                hover:bg-gray-400 hover:text-blue-50
+                text-blue-500
+              "
+            >
+              <p>
+                Want to Learn "The BEST Way to prepare for NDA Written Exam?"
+              </p>
+            </a>
+            <a
+              href="./blog_template?blog=blog3"
+              class="
+                h-20
+                bg-gray-200
+                block
+                flex
+                items-center
+                px-4
+                hover:bg-gray-400 hover:text-blue-50
+                text-blue-500
+              "
+            >
+              <p class="text-left">HOW TO PREPARE FOR SSB INTERVIEW?</p>
+            </a>
+            <a
+              href="./blog_template?blog=blog4"
+              class="
+                h-20
+                bg-gray-200
+                block
+                flex
+                items-center
+                px-4
+                hover:bg-gray-400 hover:text-blue-50
+                text-blue-500
+              "
+            >
+              <p>
+                HOW TO CRACK AIRFORCE GROUP X AND Y EXAM IN 45 DAYS (TRICKS &
+                TIPS)
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer
+      class="
+        grid grid-cols-1
+        sm:grid-cols-2
+        lg:grid-cols-4
+        px-10
+        py-5
+        bg-gray-900
+        text-sm
+      "
+    >
+      <div class="cols-span-1">
+        <h2 class="text-white text-xl font-semibold mt-3">
+          Universal Defence Academy
+        </h2>
+        <img class="h-20 mt-2" src="../images/logo.png" alt="" />
+        <p class="text-white mt-2 max-w-md">
+          A career in Defence as an officer has always a place of respect, proud
+          for the Nation, family and among youth. Universal Defence Academy'
+          Team gives his best efforts to fulfull your dream.
+        </p>
+      </div>
+      <div class="col-span-1 mt-6 sm:pl-3 lg:flex lg:justify-center sm:mt-3">
+        <ul id="footer-nav-list" class="text-white">
+          <h2 class="text-lg mb-2 border-b-2 border-white inline-block">
+            Site Navigation
+          </h2>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../html/about.html">About</a></li>
+          <li><a href="../html/testimonials.html">Testimonials</a></li>
+          <li><a href="../html/blog.html">Blog</a></li>
+          <li><a href="../html/gallery.html">Gallery</a></li>
+          <li><a href="../html/career.html">Career</a></li>
+          <li><a href="../html/blog.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="col-span-1 mt-6 lg:flex lg:justify-center sm:mt-3">
+        <ul id="footer-course-list" class="text-white">
+          <h2 class="text-lg mb-2 border-b-2 border-white inline-block">
+            Courses
+          </h2>
+          <li><a href="../courses/nda.html">NDA/NA</a></li>
+          <li><a href="../courses/navy.html">NAVY SSR</a></li>
+          <li><a href="../courses/airforce.html">AIRFORCE X&Y</a></li>
+          <li><a href="../courses/ssb.html">SSB</a></li>
+          <li><a href="../courses/afcat.html">AFCAT</a></li>
+          <li><a href="../courses/cds.html">CDS</a></li>
+          <li><a href="../courses/ssc.html">SSC</a></li>
+        </ul>
+      </div>
+      <div class="col-span-1 mt-6 sm:pl-3 sm:mt-3">
+        <h2 class="text-white text-xl border-b-2 inline-block">Contact Us</h2>
+        <div class="flex mt-4 items-center mt-2">
+          <img src="../images/location.png" class="h-8" alt="" />
+          <h3 class="pl-4 text-white">
+            117/N/110 Dr. Jha Lane, Kakadeo, Kanpur, U.P.
+          </h3>
+        </div>
+        <div class="flex mt-3 items-center">
+          <img src="../images/email.png" class="h-8 mt-2" alt="" />
+          <a
+            href="mailto:universaldefenceacademy
+        @gmail.com"
+            class="pl-4 text-white break-all"
+            >universaldefenceacademy@gmail.com</a
+          >
+        </div>
+        <div class="flex mt-5 items-center">
+          <img src="../images/phone-call.png" class="h-8 mt-2" alt="" />
+          <h3 class="pl-4 text-white">
+            <span class="">
+              <a
+                class="
+                  inline-block
+                  bg-black
+                  px-2
+                  hover:text-blue-500
+                  rounded-2xl
+                  w-28
+                  text-center
+                "
+                href="tel:9454040395"
+                >9454040395</a
+              >
+            </span>
+            <span
+              ><a
+                class="
+                  mt-1
+                  inline-block
+                  bg-black
+                  px-2
+                  hover:text-blue-500
+                  rounded-2xl
+                  w-28
+                  text-center
+                "
+                href="tel:7565849561"
+                >7565849561</a
+              ></span
+            >
+          </h3>
+        </div>
+      </div>
+    </footer>
+    <div
+      class="
+        h-20
+        bg-gray-800
+        flex flex-col
+        justify-center
+        items-center
+        text-white
+      "
+    >
+      <div class="text-center">
+        &copy; 2021 Universal Defence Academy, Inc All right reserved
+      </div>
+      <div>Made With ❤ by &nbsp; <a href="">@Angirasoft</a></div>
+    </div>
+    <script src="../public/courseHtml/blogs.js"></script>
+    <script src="../public/js/app.js"></script>
+    <script src="../public/js/blog_template.js"></script>
+  </body>
+</html>

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>About</title>
+  </head>
+  <body class="bg-black">
+    <header
+      class="
+        p-3
+        md:p-5
+        w-full
+        bg-transparent
+        flex
+        justify-between
+        items-center
+        h-20
+        sticky
+        top-0
+        bg-black
+        z-20
+      "
+    >
+      <div class="lg:hidden"></div>
+      <div id="hamburger" class="z-40 origin-center left-3 lg:hidden">
+        <div class="h-1 w-8 rounded-full bg-gray-50 mb-1"></div>
+        <div class="h-1 w-8 rounded-full bg-gray-50 mb-1"></div>
+        <div class="h-1 w-8 rounded-full bg-gray-50 mb-1"></div>
+      </div>
+      <div class="h-28">
+        <img
+          class="m-auto relative top-5 h-28 lg:h-28"
+          src="../images/logo.png"
+          alt=""
+        />
+      </div>
+      <div class="lg:hidden"></div>
+      <div
+        id="menu"
+        class="
+          lg:block
+          absolute
+          lg:static
+          z-30
+          top-0
+          h-screen
+          lg:h-auto
+          w-60
+          lg:w-auto
+          bg-yellow-500
+          lg:bg-transparent
+          menu-close
+          flex
+          lg:justify-center lg:items-center
+        "
+      >
+        <ul class="lg:text-center lg:flex relative lg:static top-20 pl-10 pl-0">
+          <li class="pr-2 p-4 lg:p-0 lg:px-2">
+            <a
+              class="nav-link text-gray-50 rounded-full px-4 py-3"
+              href="../index.html"
+              >Home</a
+            >
+          </li>
+          <li class="pr-2 p-4 lg:p-0 lg:px-2">
+            <a class="bg-white text-gray-900 rounded-full px-4 py-3">About</a>
+          </li>
+          <li id="course" class="relative pr-2 p-4 lg:p-0 lg:px-2">
+            <a class="nav-link text-gray-50 rounded-full px-4 py-3">Courses</a>
+            <ul
+              id="course-menu"
+              class="
+                hidden
+                relative
+                lg:absolute
+                right-3
+                w-44
+                ml-5
+                pl-5
+                lg:pl-0 lg:text-right
+                p-3
+                rounded-lg
+                text-gray-50
+                mt-2
+              "
+            >
+              <li>
+                <a
+                  class="course-link w-full inline-block px-1"
+                  href="../courses/nda.html"
+                  >NDA/NA</a
+                >
+              </li>
+              <li>
+                <a
+                  class="course-link w-full inline-block px-1"
+                  href="../courses/navy.html"
+                  >NAVY SSR / AA</a
+                >
+              </li>
+              <li>
+                <a
+                  class="course-link w-full inline-block px-1"
+                  href="../courses/airforce.html"
+                  >AIRFORCE X/Y</a
+                >
+              </li>
+              <li>
+                <a
+                  class="course-link w-full inline-block px-1"
+                  href="../courses/cds.html"
+                  >CDS</a
+                >
+              </li>
+              <li>
+                <a
+                  class="course-link w-full inline-block px-1"
+                  href="../courses/afcat.html"
+                  >AFCAT</a
+                >
+              </li>
+              <li>
+                <a
+                  class="course-link w-full inline-block px-1"
+                  href="../courses/ssb.html"
+                  >SSB</a
+                >
+              </li>
+              <li>
+                <a
+                  class="course-link w-full inline-block px-1"
+                  href="../courses/ssc.html"
+                  >SSC</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="pr-2 p-4 lg:p-0 lg:px-2">
+            <a
+              href="./testimonials.html"
+              class="nav-link text-gray-50 rounded-full px-4 py-3"
+              >Testimonials</a
+            >
+          </li>
+          <li class="pr-2 p-4 lg:p-0 lg:px-2">
+            <a
+              href="./blog.html"
+              class="nav-link text-gray-50 rounded-full px-4 py-3"
+              >Blog</a
+            >
+          </li>
+          <li class="pr-2 p-4 lg:p-0 lg:px-2">
+            <a
+              href="./gallery.html"
+              class="nav-link text-gray-50 rounded-full px-4 py-3"
+              >Gallery</a
+            >
+          </li>
+          <li class="pr-2 p-4 lg:p-0 lg:px-2">
+            <a
+              href="./career.html"
+              class="nav-link text-gray-50 rounded-full px-4 py-3"
+              >Career</a
+            >
+          </li>
+          <li class="pr-2 p-4 lg:p-0 lg:px-2">
+            <a
+              href="./contact.html"
+              class="nav-link text-gray-50 rounded-full px-4 py-3"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div id="about-banner" class="h-60 w-full flex justify-center items-center">
+      <h2 class="text-5xl font-bold bg-yellow-500 px-5 py-2">About Us</h2>
+    </div>
+    <div
+      class="
+        w-full
+        px-3
+        sm:px-5
+        lg:px-20
+        m-auto
+        mt-10
+        mb-10
+        flex flex-col
+        text-white
+      "
+    >
+      <div
+        class="
+          p-2
+          border-t-2 border-r-2 border-b-2 border-blue-200
+          w-11/12
+          rounded-tr-3xl rounded-br-3xl
+          self-end
+          flex flex-col
+          lg:flex-row-reverse
+        "
+        style="margin-bottom: -2px"
+      >
+        <img
+          class="
+            w-40
+            h-40
+            lg:w-60 lg:h-60 lg:object-cover
+            self-start
+            object-cover
+            rounded-full
+            lg:my-3 lg:mr-3
+          "
+          src="../images/mission.jpg"
+          alt=""
+        />
+        <div class="text-left lg:pr-3">
+          <h2 class="text-3xl pr-2 font-semibold mt-2 text-yellow-500">
+            Our Mission
+          </h2>
+          <p class="pr-2">
+            Our mission is to make kanpur the highest selection giving city in
+            defence sector. We are continuously imporoving our quality of
+            education both in terms of theory and physical. We want to provide
+            best in class study material and support to every student. We want
+            to provide the highest standard study environment to our students.
+            Our academy emphasizes on all-round development of the cadets so
+            that they consistently strive hard to live up to the expectations of
+            their parents and nation at large.
+          </p>
+        </div>
+      </div>
+      <div
+        class="
+          p-2
+          border-t-2 border-l-2 border-b-2 border-blue-200
+          w-11/12
+          rounded-tl-3xl rounded-bl-3xl
+          self-start
+          flex flex-col
+          lg:flex-row
+        "
+      >
+        <img
+          class="
+            w-40
+            h-40
+            lg:w-60 lg:h-60 lg:my-3 lg:ml-3
+            object-cover
+            rounded-full
+            object-center
+          "
+          src="../images/vision.jpg"
+          alt=""
+        />
+        <div class="lg:pl-5">
+          <h2 class="text-3xl pl-2 font-semibold mt-2 text-yellow-500">
+            Our Vision
+          </h2>
+          <p class="pl-2">
+            Our vision is to provide best quality education even to the lowest
+            class of sociey. We provide incentives so that the even the
+            financially weak students can get high quality education. Even
+            though not possible,we try our best to ensure that every student of
+            our coaching is able to qualify the defence exam. We monitor every
+            student individually to ensure that they are understanding the
+            concepts thoroughly and not left behind. We are committed to give
+            our students the best education and training, so that they are ready
+            to face the challenges of the exam environment.
+          </p>
+        </div>
+      </div>
+      <div
+        class="
+          p-2
+          border-t-2 border-r-2 border-b-2 border-blue-200
+          w-11/12
+          rounded-tr-3xl rounded-br-3xl
+          self-end
+        "
+        style="margin: -2px"
+      >
+        <div class="text-left flex flex-col lg:flex-row-reverse">
+          <div class="flex flex-col justify-center lg:items-center my-3 mx-3">
+            <img
+              class="
+                h-40
+                w-40
+                lg:h-80 lg:w-80
+                self-start
+                rounded-lg
+                object-cover
+                rounded-full
+              "
+              src="../images/p1.png"
+              alt=""
+            />
+            <p class="text-yellow-500 font-bold text-xl mt-4 lg:text-center">
+              Yogendra Pratap Singh
+            </p>
+            <p class="text-gray-300 lg:text-center"><i>Director</i></p>
+          </div>
+          <div class="lg:w-2/3 lg:my-3 lg:mr-3">
+            <div class="flex items-center">
+              <h2 class="text-yellow-500 text-3xl font-semibold">
+                Director's Message
+              </h2>
+            </div>
+            <img
+              class="h-14 relative top-1 mr-3 z-0 pl-7"
+              src="../images/left.png"
+              alt=""
+            />
+            <p class="text-gray-300 mt-3">
+              &nbsp; &nbsp; &nbsp; &nbsp;The guiding philosophies of the
+              Institute throughout have been the creation of knowledge and
+              integration globally. The objectives of imparting education,
+              combined with creation, dissemination, and application of
+              knowledge, are being met in an integrated form, to create a
+              synergetic impact.<br />
+              &nbsp; &nbsp; &nbsp; &nbsp;Universal Defence Academy has been
+              offering educational services to the students preparing for the
+              Defence exams like NDA/NA, Airforce, Navy SSR & other exams.
+              <br />
+              &nbsp; &nbsp; &nbsp; &nbsp;The institute imparts a comprehensive
+              training-cum-guidance program. The Institute was established to
+              provide a complete solution to the students preparing for the
+              exam. The focus is on providing holistic education not only
+              covering the prescribed syllabus but also enabling the students to
+              face other challenges of life with equal ease. It inculcates human
+              values and professional ethics in the students, which help them
+              make decisions and create a path that is good not only for them,
+              but also are good for society, for the nation, and the world as a
+              whole. <br />
+              &nbsp; &nbsp; &nbsp; &nbsp;To fulfill its mission in new and
+              powerful ways, each student of Universal Defence Academy is given
+              quality education and training so that they can cope up with the
+              competition in the market and prove themselves before everyone. We
+              always believe in setting the trail, and not in following the
+              path.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2"></div>
+    <footer
+      class="
+        grid grid-cols-1
+        sm:grid-cols-2
+        lg:grid-cols-4
+        px-10
+        py-5
+        bg-gray-900
+        text-sm
+      "
+    >
+      <div class="cols-span-1">
+        <h2 class="text-white text-xl font-semibold mt-3">
+          Universal Defence Academy
+        </h2>
+        <img class="h-20 mt-2" src="../images/logo.png" alt="" />
+        <p class="text-white mt-2 max-w-md">
+          A career in Defence as an officer has always a place of respect, proud
+          for the Nation, family and among youth. Universal Defence Academy'
+          Team gives his best efforts to fulfull your dream.
+        </p>
+      </div>
+      <div class="col-span-1 mt-6 sm:pl-3 lg:flex lg:justify-center sm:mt-3">
+        <ul id="footer-nav-list" class="text-white">
+          <h2 class="text-lg mb-2 border-b-2 border-white inline-block">
+            Site Navigation
+          </h2>
+          <li><a href="../index.html">Home</a></li>
+          <li><a class="text-gray-500">About</a></li>
+          <li><a href="../html/testimonials.html">Testimonials</a></li>
+          <li><a href="../html/blog.html">Blog</a></li>
+          <li><a href="../html/gallery.html">Gallery</a></li>
+          <li><a href="../html/career.html">Career</a></li>
+          <li><a href="../html/contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="col-span-1 mt-6 lg:flex lg:justify-center sm:mt-3">
+        <ul id="footer-course-list" class="text-white">
+          <h2 class="text-lg mb-2 border-b-2 border-white inline-block">
+            Courses
+          </h2>
+          <li><a href="../courses/nda.html">NDA/NA</a></li>
+          <li><a href="../courses/navy.html">NAVY SSR</a></li>
+          <li><a href="../courses/airforce.html">AIRFORCE X&Y</a></li>
+          <li><a href="../courses/ssb.html">SSB</a></li>
+          <li><a href="../courses/afcat.html">AFCAT</a></li>
+          <li><a href="../courses/cds.html">CDS</a></li>
+          <li><a href="../courses/ssc.html">SSC</a></li>
+        </ul>
+      </div>
+      <div class="col-span-1 mt-6 sm:pl-3 sm:mt-3">
+        <h2 class="text-white text-xl border-b-2 inline-block">Contact Us</h2>
+        <div class="flex mt-4 items-center mt-2">
+          <img src="../images/location.png" class="h-8" alt="" />
+          <h3 class="pl-4 text-white">
+            117/N/110 Dr. Jha Lane, Kakadeo, Kanpur, U.P.
+          </h3>
+        </div>
+        <div class="flex mt-3 items-center">
+          <img src="../images/email.png" class="h-8 mt-2" alt="" />
+          <a
+            href="mailto:universaldefenceacademy
+          @gmail.com"
+            class="pl-4 text-white break-all"
+            >universaldefenceacademy @gmail.com</a
+          >
+        </div>
+        <div class="flex mt-5 items-center">
+          <img src="../images/phone-call.png" class="h-8 mt-2" alt="" />
+          <h3 class="pl-4 text-white">
+            <span class="">
+              <a
+                class="
+                  inline-block
+                  bg-black
+                  px-2
+                  hover:text-blue-500
+                  rounded-2xl
+                  w-28
+                  text-center
+                "
+                href="tel:9454040395"
+                >9454040395</a
+              >
+            </span>
+            <span
+              ><a
+                class="
+                  mt-1
+                  inline-block
+                  bg-black
+                  px-2
+                  hover:text-blue-500
+                  rounded-2xl
+                  w-28
+                  text-center
+                "
+                href="tel:7565849561"
+                >7565849561</a
+              ></span
+            >
+          </h3>
+        </div>
+      </div>
+    </footer>
+    <div
+      class="
+        h-20
+        bg-gray-800
+        flex flex-col
+        justify-center
+        items-center
+        text-white
+      "
+    >
+      <div class="text-center">
+        &copy; 2021 Universal Defence Academy, Inc All right reserved
+      </div>
+      <div>Made With ❤ by &nbsp; <a href="">@Angirasoft</a></div>
+    </div>
+    <script src="../public/js/app.js"></script>
+  </body>
+</html>

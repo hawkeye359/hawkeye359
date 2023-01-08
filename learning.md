@@ -1,1 +1,2 @@
+- https://abba.dev/blog/jsnsd-exam
 - https://nodeschool.io/

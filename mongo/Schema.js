@@ -1,5 +1,4 @@
-import {Schema, model} from "mongoose";
-
+const {Schema,model} = require("mongoose");
 const counter = new Schema({
     name: String,
     count: Number
@@ -7,4 +6,4 @@ const counter = new Schema({
 
 const Counter = model('Counter',counter);
 
-export default Counter;
+module.exports = Counter;

@@ -1,9 +1,8 @@
 // mongodb://127.0.0.1:27017/test
-import express from "express";
-import mongoose from "mongoose";
-import Counter from "../mongo/Schema.js";
-import dotenv from "dotenv";
-dotenv.config();
+const express = require("express");
+const mongoose = require("mongoose");
+const Counter = require("../mongo/Schema");
+require("dotenv").config();
 main().then((e)=>{console.log("database successfully connected",e)})
 .catch(e=>{
     console.log("database error");
@@ -56,4 +55,4 @@ async function fetchImage (count) {
 app.listen("5000",()=>{
     console.log("server running on port 5000");
 })
-export default app;
+module.exports = app;

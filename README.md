@@ -1,7 +1,7 @@
 
 <img src="https://github.com/hawkeye359/hawkeye359/blob/c4871ba4cb91e03510c852bdf9db38c4103daff2/assets/banner.png"><br/>
 <div align="center">
-    <img src="https://custom-icon-badges.demolab.com/badge/views-215-red?style=for-the-badge&logo=eye"> &nbsp;
+    <img src="https://hawkeye359.vercel.app/profile-count"> &nbsp;
     <a href="https://twitter.com/hawkeye359">
         <img src="https://custom-icon-badges.demolab.com/badge/@hawkeye359-blue?style=for-the-badge&logo=twitter">
     </a>

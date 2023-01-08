@@ -1,6 +1,8 @@
 // mongodb://127.0.0.1:27017/test
 const express = require("express");
 const mongoose = require("mongoose");
+const ip = require("ip");
+console.log("my ip address",ip.address());
 const Counter = require("../mongo/Schema");
 require("dotenv").config();
 main().then((e)=>{console.log("database successfully connected",e)})
